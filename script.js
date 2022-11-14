@@ -52,24 +52,39 @@ let media = 0.0;
 for (let i = 0; i < 10; i++) {
     arraynum[i] = parseInt(prompt("Inserisci lista numero : "));  //inserisci numero e converta in int
     let numcheck = isNaN(arraynum[i]);                           //controla se e numero
-      if(numcheck){                                              // se non e numero stampa che non inserito numero
-    document.writeln("Non inserito numero !!! elemento: "+i);
-    }else {                                                    //se e numero  trova quello che se chiede
-    sum += arraynum[i];                                      //somma
-    if (arraynum[i] < min) {                                      //se elemento e piu picolo di minimale quello elemento e minimale
-        min = arraynum[i];
+    if (numcheck) {                                              // se non e numero stampa che non inserito numero
+        document.writeln("Non inserito numero !!! elemento: " + i);
+    } else {                                                    //se e numero  trova quello che se chiede
+        sum += arraynum[i];                                      //somma
+        if (arraynum[i] < min) {                                      //se elemento e piu picolo di minimale quello elemento e minimale
+            min = arraynum[i];
+        }
+        if (arraynum[i] > max) {                                //se elemento e piu grande di massimale quello elemento e massimale
+            max = arraynum[i];
+        }
     }
-    if (arraynum[i] > max) {                                //se elemento e piu grande di massimale quello elemento e massimale
-        max = arraynum[i];
-    }
-}
 }
 
 media = sum / arraynum.length;                     //media la somma devisa con numero di element
- document.writeln("Somma: "+sum+"\n Media: "+media+"\n Min :"+min+"\n Max :"+max);
- document.write("<br>");
- document.write("<br>");
+document.writeln("Somma: " + sum + "\n Media: " + media + "\n Min :" + min + "\n Max :" + max);
+document.write("<br>");
+document.write("<br>");
 
- //Snack 4
- document.writeln("----------Snack 4-----------");
- document.write("<br>");
+//Snack 4
+document.writeln("----------Snack 4-----------");
+document.write("<br>");
+
+let arrayguests = ["chester", "leeches", "webster", "hornbeams", "ismays", "chrysties", "brayan", "monica", "giovanni"];
+let nameguest = prompt("Il vostro nome: ");
+let nome = nameguest.toLowerCase();        // fai lo nome minusculo e puoi controla della lista
+let flag = false;
+for (let i = 0; i < arrayguests.length; i++) {
+    if (nome == arrayguests[i]) {                //se che ilnome dentro la lista stampa che se po entrare se no non si po !
+       flag=true;
+    }
+}
+if(flag){
+    document.writeln("Prego " + nameguest + " puoi entrare.");
+}else{
+    document.writeln("Scuzate "+nameguest+ " non potete entrare.");
+}
