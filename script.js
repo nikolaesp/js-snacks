@@ -144,7 +144,7 @@ if(isNaN(maxrandom) && isNaN(numutente)){
     document.writeln("Non inserito numero !!!");
 }
 
-let x = Math.floor((Math.random() * maxrandom) + 0);
+let x = Math.floor((Math.random() * maxrandom) + 0); // numero random
 
 if(x == numutente){
     document.writeln("Hai Vinto !!!");
