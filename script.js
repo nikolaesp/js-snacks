@@ -98,25 +98,42 @@ document.writeln("----------Snack 5-----------");
 document.write("<br>");
 
 let arraydispari = new Array();
+let arraypari = new Array();
 let j = 0;
+let k = 0;
 for (let i = 0; i < 6; i++) {
-    let numeroutente = parseInt(prompt("Inscerisci numero:" +(i+1)+ "volta :"));
+    let numeroutente = parseInt(prompt("Inscerisci numero:" + (i + 1) + "volta :"));
     if (isNaN(numeroutente)) {
         document.writeln("Non inserito numero !!!");
         document.write("<br>");
     } else {
 
         if (numeroutente % 2 == 1) {
-            arraydispari[j] = numeroutente;
-            j++;
+            arraydispari[j++] = numeroutente;
+        } else {
+            arraypari[k++] = numeroutente;
         }
     }
 }
 document.write("<br>");
-document.writeln("Lista dispari e: ");
+if(arraypari.length>0){
+document.writeln("Lista pari e: ");
 document.write("<br>");
-for(let i = 0; i < arraydispari.length;i++){
-    document.writeln(arraydispari[i]+" ");
+for (let i = 0; i < arraypari.length; i++) {
+    document.writeln(arraypari[i] + " ");
 }
 document.write("<br>");
+}
+if(arraydispari.length>0){
+document.writeln("Lista dispari e: ");
+document.write("<br>");
+for (let i = 0; i < arraydispari.length; i++) {
+    document.writeln(arraydispari[i] + " ");
+}
+}
+document.write("<br>");
+document.write("<br>");
+
+//Snack 6 Crea lista e riempi solo con numeri dispari chi le da utente 6 volte
+document.writeln("----------Snack 6-----------");
 document.write("<br>");
