@@ -88,7 +88,7 @@ if (flag) {
     document.writeln("Prego " + nameguest + " puoi entrare.");
     document.write("<br>");
 } else {
-    document.writeln("Scuzate " + nameguest + " non potete entrare.");
+    document.writeln("Scusate " + nameguest + " non potete entrare.");
     document.write("<br>");
 }
 document.write("<br>");
