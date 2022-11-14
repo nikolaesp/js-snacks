@@ -70,8 +70,9 @@ document.writeln("Somma: " + sum + "\n Media: " + media + "\n Min :" + min + "\n
 document.write("<br>");
 document.write("<br>");
 
-//Snack 4
+//Snack 4 Festa di gatsbi cerca il nome  se che nella lista e stampa se poi entrare o no;
 document.writeln("----------Snack 4-----------");
+document.write("<br>");
 document.write("<br>");
 
 let arrayguests = ["chester", "leeches", "webster", "hornbeams", "ismays", "chrysties", "brayan", "monica", "giovanni"];
@@ -80,11 +81,43 @@ let nome = nameguest.toLowerCase();        // fai lo nome minusculo e puoi contr
 let flag = false;
 for (let i = 0; i < arrayguests.length; i++) {
     if (nome == arrayguests[i]) {                //se che ilnome dentro la lista stampa che se po entrare se no non si po !
-       flag=true;
+        flag = true;
     }
 }
-if(flag){
+if (flag) {
     document.writeln("Prego " + nameguest + " puoi entrare.");
-}else{
-    document.writeln("Scuzate "+nameguest+ " non potete entrare.");
+    document.write("<br>");
+} else {
+    document.writeln("Scuzate " + nameguest + " non potete entrare.");
+    document.write("<br>");
 }
+document.write("<br>");
+document.write("<br>");
+//Snack 5 Crea lista e riempi solo con numeri dispari chi le da utente 6 volte
+document.writeln("----------Snack 5-----------");
+document.write("<br>");
+document.write("<br>");
+
+let arraydispari = new Array();
+let j = 0;
+for (let i = 0; i < 6; i++) {
+    let numeroutente = parseInt(prompt("Inscerisci numero:" + i + "volta :"));
+    if (isNaN(numeroutente)) {
+        document.writeln("Non inserito numero !!!");
+        document.write("<br>");
+    } else {
+
+        if (numeroutente % 2 == 1) {
+            arraydispari[j] = numeroutente;
+            j++;
+        }
+    }
+}
+document.write("<br>");
+document.writeln("Lista dispari e: ");
+document.write("<br>");
+for(let i = 0; i < arraydispari.length;i++){
+    document.writeln(arraydispari[i]+" ");
+}
+document.write("<br>");
+document.write("<br>");
