@@ -2,12 +2,12 @@
 let num1 = parseInt(prompt(`Inserisci numero 1: `));
 let num2 = parseInt(prompt(`Inserisci numero 2: `));
 if (num1 < num2) {
-    console.log(`Primo numero e piu grande: ${num2}`);
+    document.write(`Primo numero e piu grande: ${num2}`);
 }
 if (num2 < num1) {
-    console.log(`Secondo numero e piu grande: ${num1}`);
+    document.write(`Secondo numero e piu grande: ${num1}`);
 }
 else {
     if(num1==num2)
-    console.log(`Sonno iguali numeri: ${num1}=${num2}`);
+    document.write(`Sonno iguali numeri: ${num1}=${num2}`);
 }
