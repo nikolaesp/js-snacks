@@ -134,6 +134,22 @@ for (let i = 0; i < arraydispari.length; i++) {
 document.write("<br>");
 document.write("<br>");
 
-//Snack 6 Crea lista e riempi solo con numeri dispari chi le da utente 6 volte
+//Snack 6  inserisci 2 numeri uno per max random che po creare computer altro il numero che vuoi giocare con computer
 document.writeln("----------Snack 6-----------");
 document.write("<br>");
+let maxrandom = parseInt(prompt("Inserisci numero massimo che po creare computer: "));
+let numutente = parseInt(prompt("Inserisci numero per giocare con computer: "));
+
+if(isNaN(maxrandom) && isNaN(numutente)){
+    document.writeln("Non inserito numero !!!");
+}
+
+let x = Math.floor((Math.random() * maxrandom) + 0);
+
+if(x == numutente){
+    document.writeln("Hai Vinto !!!");
+    document.write("<br>");
+}else{
+    document.writeln("Hai Perso !!!");
+    document.write("<br>");
+}
