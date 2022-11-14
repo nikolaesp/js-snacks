@@ -53,7 +53,7 @@ for (let i = 0; i < 10; i++) {
     arraynum[i] = parseInt(prompt("Inserisci lista numero : "));  //inserisci numero e converta in int
     let numcheck = isNaN(arraynum[i]);                           //controla se e numero
       if(numcheck){                                              // se non e numero stampa che non inserito numero
-    document.writeln("Non inserito numero !!!");
+    document.writeln("Non inserito numero !!! elemento: "+i);
     }else {                                                    //se e numero  trova quello che se chiede
     sum += arraynum[i];                                      //somma
     if (arraynum[i] < min) {                                      //se elemento e piu picolo di minimale quello elemento e minimale
