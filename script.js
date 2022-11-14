@@ -96,12 +96,11 @@ document.write("<br>");
 //Snack 5 Crea lista e riempi solo con numeri dispari chi le da utente 6 volte
 document.writeln("----------Snack 5-----------");
 document.write("<br>");
-document.write("<br>");
 
 let arraydispari = new Array();
 let j = 0;
 for (let i = 0; i < 6; i++) {
-    let numeroutente = parseInt(prompt("Inscerisci numero:" + i + "volta :"));
+    let numeroutente = parseInt(prompt("Inscerisci numero:" +(i+1)+ "volta :"));
     if (isNaN(numeroutente)) {
         document.writeln("Non inserito numero !!!");
         document.write("<br>");
