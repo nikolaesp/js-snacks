@@ -8,11 +8,11 @@ let numck2 = isNaN(num2);
 if (!numck1 && !numck2) {
 
     if (num1 < num2) {
-        document.writeln("Primo numero e piu grande: " + num2);
+        document.writeln("Secondo numero e piu grande: " + num2);
         document.write("<br>");
     }
     if (num2 < num1) {
-        document.writeln("Secondo numero e piu grande: " + num1);
+        document.writeln("Primo numero e piu grande: " + num1);
         document.write("<br>");
     }
     else {
