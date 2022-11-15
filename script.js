@@ -80,7 +80,7 @@ let nameguest = prompt("Il vostro nome: ");
 let nome = nameguest.toLowerCase();        // fai lo nome minusculo e puoi controla della lista
 let flag = false;
 for (let i = 0; i < arrayguests.length; i++) {
-    if (nome == arrayguests[i]) {                //se che ilnome dentro la lista stampa che se po entrare se no non si po !
+    if (nome == arrayguests[i]) {                //se che il nome dentro la lista stampa che se po entrare se no non si po !
         flag = true;
     }
 }
