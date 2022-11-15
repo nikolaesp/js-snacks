@@ -93,7 +93,7 @@ if (flag) {
 }
 document.write("<br>");
 document.write("<br>");
-//Snack 5 Crea lista e riempi solo con numeri dispari chi le da utente 6 volte
+//Snack 5 Crea lista e riempi solo con numeri dispari chi le da utente 6 volte bonus: riempi un altra lista con pari numeri
 document.writeln("----------Snack 5-----------");
 document.write("<br>");
 
